@@ -34,5 +34,10 @@ class MenuItem {
   title: 'Progress Indicators', 
   subTitle: 'Generales y controlados', 
   link: '/progress', 
-  icon: Icons.refresh_rounded)
+  icon: Icons.refresh_rounded),
+  MenuItem(
+    subTitle: "Hola Mundo", 
+    title: "Snackbar y Dialogos", 
+    link: '/snackbar', 
+    icon: Icons.info_outline)
 ];
