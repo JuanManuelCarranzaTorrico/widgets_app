@@ -50,12 +50,36 @@ class _buttonsView extends StatelessWidget {
                 OutlinedButton.icon(onPressed: (){}, label: const Text("outline Icon"), icon: const Icon(Icons.access_alarms_outlined)),
                 TextButton(onPressed: (){}, child: const Text('text')),
                 TextButton.icon(onPressed: (){}, label: const Text('Text Icon'), icon: const Icon(Icons.airline_seat_flat_angled_outlined),), 
-                //TODO Custom Button
+                const CustomButton(),
                 IconButton(onPressed: (){}, icon: const Icon(Icons.add_home_work_rounded)), 
                  
                 
           ]
         )
+      ),
+    );
+  }
+}
+
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
+  
+  @override
+  
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: colors.primary,
+        child: InkWell(
+          onTap: () {
+          },
+          child: const Padding(
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            child: Text("Hola Mundo", style: TextStyle(color: Colors.white),)),
+        ),
       ),
     );
   }
