@@ -23,8 +23,8 @@ class SnackbarScreen extends StatelessWidget {
       title: const Text('¿Estas Seguro?'),
       content: const Text('Irure exercitation excepteur voluptate nisi nisi consequat exercitation occaecat.'),
       actions: [
-        TextButton(onPressed: ()=>context.pop(), child: Text('Cancelar')),
-        FilledButton(onPressed: ()=>context.pop(), child: Text('Aceptar'))
+        TextButton(onPressed: ()=>context.pop(), child: const Text('Cancelar')),
+        FilledButton(onPressed: ()=>context.pop(), child: const Text('Aceptar'))
       ],
     )
     );
@@ -42,14 +42,14 @@ class SnackbarScreen extends StatelessWidget {
           children: [
             FilledButton.tonal(
               onPressed: (){
-                showAboutDialog(context: context, children: [ Text('Mollit deserunt fugiat dolor consectetur ad exercitation esse non ut commodo dolor.')]);
+                showAboutDialog(context: context, children: [ const Text('Mollit deserunt fugiat dolor consectetur ad exercitation esse non ut commodo dolor.')]);
               }, 
-              child: Text('Licencias usadas')),
+              child: const Text('Licencias usadas')),
               FilledButton.tonal(
               onPressed: (){
                 openDialog(context);
               }, 
-              child: Text('Mostrar dialogo')),
+              child: const Text('Mostrar dialogo')),
           ],
         ),
       ),

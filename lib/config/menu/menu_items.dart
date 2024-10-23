@@ -39,5 +39,12 @@ class MenuItem {
     subTitle: "Hola Mundo", 
     title: "Snackbar y Dialogos", 
     link: '/snackbar', 
-    icon: Icons.info_outline)
+    icon: Icons.info_outline
+    ),
+    MenuItem(
+    subTitle: "Container Con animaciones", 
+    title: "animated", 
+    link: '/animated', 
+    icon: Icons.check_box_outline_blank_rounded
+    ),
 ];
